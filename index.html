@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Todo List</title>
+    <script defer src="main.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <div class="app-container">
+      <div class="sidebar">
+        <div class="sidebar-nav">
+          <div class="app-logo">Things To do</div>
+          <div class="menus-section"></div>
+          <div class="workspace-section">
+            <div class="workspace-header">
+              <div class="workspace-title">Projects</div>
+              <button class="create-project-btn" id="createProjectBtn">
+                <span class="material-symbols-outlined"> add</span>
+              </button>
+            </div>
+            <div class="workspaces"></div>
+          </div>
+          <dialog class="dialog-modal"></dialog>
+        </div>
+        <div class="profile-link">
+          
+          <a href="https://github.com/KMyatMon/mytodo_listjs"
+            ><ion-icon name="logo-github"></ion-icon
+          ></a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="display-board">
+          <div class="display-banner"></div>
+          <p class="display-project-name" id="currentProjectName"></p>
+        </div>
+        <div class="tasks-section">
+          <div class="tasks-container"></div>
+          <div class="tasks-completed-container disabled"></div>
+          <div class="tasks-add-popup"></div>
+        </div>
+        <div class="content-footer">
+          <button id="showDoneTasksBtn">
+            <span class="material-symbols-outlined"> done_all </span>Done
+            <div class="done-count"></div>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
